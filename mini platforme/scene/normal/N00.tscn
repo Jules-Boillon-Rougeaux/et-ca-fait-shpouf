@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://0mrxd3v6p0nx"]
+[gd_scene load_steps=11 format=3 uid="uid://0mrxd3v6p0nx"]
 
 [ext_resource type="Script" path="res://scene/normal/N00.gd" id="1_dm8bl"]
 [ext_resource type="PackedScene" uid="uid://x2mjfdf05bk4" path="res://Music/respawn.tscn" id="2_mlxoa"]
 [ext_resource type="Texture2D" uid="uid://k5da10vael8r" path="res://background.png" id="2_ppwgw"]
 [ext_resource type="Texture2D" uid="uid://b10d5raaeghb" path="res://tilemap.png" id="3_yhvsq"]
 [ext_resource type="PackedScene" uid="uid://dsb3k7ehvohyl" path="res://character/main_character.tscn" id="4_o2bnj"]
-[ext_resource type="Script" path="res://character/main_character.gd" id="5_64432"]
 [ext_resource type="Texture2D" uid="uid://dqih3lf17qyhp" path="res://end.png" id="6_n6ijq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yt3y6"]
@@ -109,7 +108,6 @@ layer_0/tile_data = PackedInt32Array(7078050, 0, 3, 7078051, 65536, 3, 7078052, 
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("4_o2bnj")]
 position = Vector2(237, 296)
-script = ExtResource("5_64432")
 
 [node name="END" type="Area2D" parent="."]
 position = Vector2(589, 30)
