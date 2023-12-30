@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c3c8qlkvtbwea"]
+
+[node name="main_menu" type="Node"]
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_right = 1152.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0.556863, 0.290196, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.388235, 0.00392157, 0.772549, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 80
+text = "Et ça fait SHPOUF ! ! !"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 193.0
+offset_right = 743.0
+offset_bottom = 292.0
+text = "Start"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 487.0
+offset_right = 743.0
+offset_bottom = 586.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 408.0
+offset_top = 345.0
+offset_right = 743.0
+offset_bottom = 444.0
