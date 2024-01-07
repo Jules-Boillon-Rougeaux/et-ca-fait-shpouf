@@ -1,14 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://bqaj5y4xogi4e"]
+[gd_scene load_steps=10 format=3 uid="uid://bqaj5y4xogi4e"]
 
 [ext_resource type="Script" path="res://scene/enclume/E02.gd" id="1_l8ur0"]
 [ext_resource type="Texture2D" uid="uid://k5da10vael8r" path="res://background.png" id="2_2t6tw"]
 [ext_resource type="Texture2D" uid="uid://b10d5raaeghb" path="res://tilemap.png" id="3_2ctaf"]
-[ext_resource type="Texture2D" uid="uid://c2u8pv1nwdw3h" path="res://surcouche.png" id="4_15s1r"]
 [ext_resource type="PackedScene" uid="uid://dion3f72lqsoe" path="res://character/perso_enclume.tscn" id="5_3cabi"]
-[ext_resource type="Texture2D" uid="uid://dqih3lf17qyhp" path="res://end.png" id="6_mb3fb"]
 [ext_resource type="PackedScene" uid="uid://x2mjfdf05bk4" path="res://Music/respawn.tscn" id="7_6jf12"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_si12w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_675k6"]
 texture = ExtResource("3_2ctaf")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -26,6 +24,9 @@ texture = ExtResource("3_2ctaf")
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
@@ -42,6 +43,9 @@ texture = ExtResource("3_2ctaf")
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
@@ -58,6 +62,9 @@ texture = ExtResource("3_2ctaf")
 3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:2/0/physics_layer_0/angular_velocity = 0.0
 3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
 0:3/0 = 0
 0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_0/angular_velocity = 0.0
@@ -74,23 +81,22 @@ texture = ExtResource("3_2ctaf")
 3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:3/0/physics_layer_0/angular_velocity = 0.0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:3/0/physics_layer_0/angular_velocity = 0.0
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
 
-[sub_resource type="TileSet" id="TileSet_wwgqm"]
+[sub_resource type="TileSet" id="TileSet_wjg0q"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_si12w")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mqyfq"]
-texture = ExtResource("4_15s1r")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_cjato"]
-sources/0 = SubResource("TileSetAtlasSource_mqyfq")
+sources/0 = SubResource("TileSetAtlasSource_675k6")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ghgi5"]
-size = Vector2(16, 2)
+size = Vector2(16, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b0siv"]
 size = Vector2(1224, 33.5)
@@ -112,35 +118,22 @@ texture = ExtResource("2_2t6tw")
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
-position = Vector2(-1, 0)
-tile_set = SubResource("TileSet_wwgqm")
+tile_set = SubResource("TileSet_wjg0q")
 format = 2
-layer_0/tile_data = PackedInt32Array(2424845, 196608, 0, 2490381, 196608, 2, 2424847, 0, 0, 2490383, 0, 2, 2424849, 0, 0, 2490385, 0, 2, 2359315, 0, 0, 2424851, 0, 1, 2490387, 0, 2, 2359317, 0, 1, 2424853, 0, 1, 2490389, 0, 2, 2424844, 65536, 0, 2490380, 65536, 2, 2424855, 0, 1, 2490391, 0, 2, 2424858, 0, 1, 2490394, 0, 2, 2424861, 0, 1, 2490397, 0, 2, 2359328, 0, 1, 2424864, 0, 1, 2490400, 0, 2, 2359331, 0, 1, 2424867, 0, 1, 2490403, 0, 2, 2293781, 0, 0, 2293795, 0, 1, 2359334, 0, 1, 2424870, 0, 1, 2490406, 0, 2, 2359319, 0, 0, 2359322, 0, 0, 2359325, 0, 0, 2293792, 0, 0, 2228259, 0, 0, 2293798, 0, 0, 2293802, 0, 0, 2359338, 0, 1, 2424874, 0, 1, 2490410, 0, 2, 2359342, 0, 0, 2424878, 0, 1, 2490414, 0, 2, 2359346, 0, 0, 2424882, 0, 1, 2490418, 0, 2, 2228274, 0, 2, 2162738, 0, 1, 2162742, 0, 2, 2359350, 0, 0, 2424886, 0, 1, 2490422, 0, 2, 2490427, 0, 3, 2490428, 65536, 3, 2490429, 131072, 3, 2424896, 0, 3, 2424897, 65536, 3, 2424898, 131072, 3, 2359365, 65536, 3, 2359366, 131072, 3, 2359364, 0, 3, 2293824, 65536, 2, 2293825, 131072, 3, 2228285, 0, 1, 2293821, 0, 2, 2162746, 0, 1, 2228282, 0, 2, 2097198, 0, 0, 2228288, 0, 0, 2162749, 0, 0, 2097210, 0, 0, 2097206, 0, 0, 2097202, 0, 0, 2162734, 0, 2, 2031658, 0, 0, 2097194, 65536, 2, 2097195, 131072, 3, 2031654, 0, 0, 2097190, 0, 2, 2031649, 0, 3, 2031650, 65536, 3, 2031651, 131072, 3)
-
-[node name="Glace" type="TileMap" parent="."]
-texture_filter = 1
-position = Vector2(-1, 0)
-tile_set = SubResource("TileSet_cjato")
-format = 2
-layer_0/tile_data = PackedInt32Array(2424844, 65536, 0, 2424845, 65536, 0, 2424847, 65536, 0, 2424849, 65536, 0, 2359315, 65536, 0, 2293781, 65536, 0, 2359319, 65536, 0, 2359322, 65536, 0, 2359325, 65536, 0, 2031649, 65536, 0, 2031650, 65536, 0, 2031651, 65536, 0, 2293792, 65536, 0, 2228259, 65536, 0, 2031654, 65536, 0, 2293798, 65536, 0, 2031658, 65536, 0, 2097195, 65536, 0, 2293802, 65536, 0, 2097198, 65536, 0, 2097202, 65536, 0, 2359342, 65536, 0, 2359346, 65536, 0, 2359350, 65536, 0, 2097206, 65536, 0, 2097210, 65536, 0, 2162749, 65536, 0, 2228288, 65536, 0, 2293825, 65536, 0, 2424896, 65536, 0, 2424897, 65536, 0, 2424898, 65536, 0, 2359364, 65536, 0, 2359365, 65536, 0, 2490428, 65536, 0, 2490429, 65536, 0, 2490427, 65536, 0, 2359366, 65536, 0)
+layer_0/tile_data = PackedInt32Array(2424845, 196608, 0, 2490381, 196608, 2, 2424847, 0, 0, 2490383, 0, 2, 2424849, 0, 0, 2490385, 0, 2, 2359315, 0, 0, 2424851, 0, 1, 2490387, 0, 2, 2359317, 0, 1, 2424853, 0, 1, 2490389, 0, 2, 2424844, 65536, 0, 2490380, 65536, 2, 2424855, 0, 1, 2490391, 0, 2, 2424858, 0, 1, 2490394, 0, 2, 2424861, 0, 1, 2490397, 0, 2, 2359328, 0, 1, 2424864, 0, 1, 2490400, 0, 2, 2359331, 0, 1, 2424867, 0, 1, 2490403, 0, 2, 2293781, 0, 0, 2293795, 0, 1, 2359334, 0, 1, 2424870, 0, 1, 2490406, 0, 2, 2359319, 0, 0, 2359322, 0, 0, 2359325, 0, 0, 2293792, 0, 0, 2228259, 0, 0, 2293798, 0, 0, 2293802, 0, 0, 2359338, 0, 1, 2424874, 0, 1, 2490410, 0, 2, 2359342, 0, 0, 2424878, 0, 1, 2490414, 0, 2, 2359346, 0, 0, 2424882, 0, 1, 2490418, 0, 2, 2228274, 0, 2, 2162738, 0, 1, 2162742, 0, 2, 2359350, 0, 0, 2424886, 0, 1, 2490422, 0, 2, 2490427, 0, 3, 2490428, 65536, 3, 2490429, 131072, 3, 2424896, 0, 3, 2424897, 65536, 3, 2424898, 131072, 3, 2359365, 65536, 3, 2359366, 131072, 3, 2359364, 0, 3, 2293824, 65536, 2, 2293825, 131072, 3, 2228285, 0, 1, 2293821, 0, 2, 2162746, 0, 1, 2228282, 0, 2, 2097198, 0, 0, 2228288, 0, 0, 2162749, 0, 0, 2097210, 0, 0, 2097206, 0, 0, 2097202, 0, 0, 2162734, 0, 2, 2031658, 0, 0, 2097194, 65536, 2, 2097195, 131072, 3, 2031654, 0, 0, 2097190, 0, 2, 2031649, 0, 3, 2031650, 65536, 3, 2031651, 131072, 3, 2031646, 262144, 3)
 
 [node name="Perso_enclume" parent="." instance=ExtResource("5_3cabi")]
-position = Vector2(205, 586)
+position = Vector2(208, 586)
 
 [node name="END" type="Area2D" parent="."]
-position = Vector2(855, 256)
-
-[node name="Sprite2D" type="Sprite2D" parent="END"]
-texture_filter = 1
-position = Vector2(-368, 240)
-texture = ExtResource("6_mb3fb")
+position = Vector2(856, 256)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="END"]
-position = Vector2(-368, 239)
+position = Vector2(-368, 239.5)
 shape = SubResource("RectangleShape2D_ghgi5")
 
 [node name="Fall" type="Area2D" parent="."]
-position = Vector2(94, -42)
+position = Vector2(96, -46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fall"]
 position = Vector2(618, 687)
