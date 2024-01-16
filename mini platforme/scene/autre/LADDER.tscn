@@ -1,0 +1,170 @@
+[gd_scene load_steps=12 format=3 uid="uid://bqlch2rg6sbj"]
+
+[ext_resource type="Script" path="res://scene/autre/LADDER.gd" id="1_4f1nk"]
+[ext_resource type="Texture2D" uid="uid://k5da10vael8r" path="res://background.png" id="2_km1q0"]
+[ext_resource type="Texture2D" uid="uid://b10d5raaeghb" path="res://tilemap.png" id="3_s2lpq"]
+[ext_resource type="PackedScene" uid="uid://c7i3e8qdmyo14" path="res://character/perso_ladder.tscn" id="4_rgq21"]
+[ext_resource type="PackedScene" uid="uid://x2mjfdf05bk4" path="res://Music/respawn.tscn" id="5_wf7bb"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yt3y6"]
+texture = ExtResource("3_s2lpq")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_0/angular_velocity = 0.0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:3/0/physics_layer_0/angular_velocity = 0.0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:3/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_3csx0"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_yt3y6")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ao1ca"]
+size = Vector2(16, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgc7l"]
+size = Vector2(1671, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7qeq2"]
+size = Vector2(48, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opmfc"]
+size = Vector2(3, 81)
+
+[node name="LADDER" type="Node"]
+script = ExtResource("1_4f1nk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2307.0
+offset_top = -1589.0
+offset_right = 2195.0
+offset_bottom = 1606.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_km1q0")
+stretch_mode = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+position = Vector2(-2232, -1392)
+tile_set = SubResource("TileSet_3csx0")
+format = 2
+layer_0/tile_data = PackedInt32Array(7012493, 131072, 1, 7012494, 131072, 1, 7012495, 131072, 1, 7012496, 131072, 1, 7012497, 131072, 1, 7012498, 131072, 1, 7012499, 131072, 1, 7012500, 131072, 1, 7012501, 131072, 1, 7012502, 131072, 1, 7012503, 131072, 1, 7012504, 131072, 1, 7012505, 131072, 1, 7012506, 131072, 1, 7012507, 131072, 1, 7012508, 131072, 1, 7012509, 131072, 1, 7012510, 131072, 1, 7078046, 131072, 1, 7078047, 131072, 1, 7078048, 131072, 1, 7078049, 131072, 1, 7078050, 131072, 1, 7078051, 131072, 1, 7078052, 131072, 1, 7078053, 131072, 1, 7078054, 131072, 1, 7078055, 131072, 1, 7078056, 131072, 1, 7012520, 131072, 1, 6946984, 131072, 1, 6881448, 131072, 1)
+layer_1/tile_data = PackedInt32Array(7078050, 262144, 1, 7078051, 262144, 1, 7078052, 262144, 1, 6881433, 262144, 0, 6881432, 262144, 3)
+
+[node name="Perso_LADDER" parent="." instance=ExtResource("4_rgq21")]
+position = Vector2(280, 314)
+
+[node name="END" type="Area2D" parent="."]
+position = Vector2(589, 30)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="END"]
+position = Vector2(3, 1.5)
+shape = SubResource("RectangleShape2D_ao1ca")
+
+[node name="Fall" type="Area2D" parent="."]
+position = Vector2(-3, -24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fall"]
+position = Vector2(579, 387)
+shape = SubResource("RectangleShape2D_hgc7l")
+
+[node name="respawn" parent="." instance=ExtResource("5_wf7bb")]
+volume_db = -30.0
+
+[node name="Trampoline" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trampoline"]
+position = Vector2(384, 335.5)
+shape = SubResource("RectangleShape2D_7qeq2")
+
+[node name="Ladder" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ladder"]
+position = Vector2(217.5, 263.5)
+shape = SubResource("RectangleShape2D_opmfc")
+
+[connection signal="body_entered" from="END" to="." method="_on_end_body_entered"]
+[connection signal="body_entered" from="Fall" to="." method="_on_fall_body_entered"]
+[connection signal="body_exited" from="Trampoline" to="Perso_LADDER" method="_on_trampoline_body_exited"]
+[connection signal="body_entered" from="Ladder" to="Perso_LADDER" method="_on_ladder_body_entered"]

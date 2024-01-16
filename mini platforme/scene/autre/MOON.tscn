@@ -1,0 +1,189 @@
+[gd_scene load_steps=10 format=3 uid="uid://241l0mbbd6j0"]
+
+[ext_resource type="Script" path="res://scene/autre/MOON.gd" id="1_iphft"]
+[ext_resource type="Texture2D" uid="uid://k5da10vael8r" path="res://background.png" id="2_avpg8"]
+[ext_resource type="Texture2D" uid="uid://b10d5raaeghb" path="res://tilemap.png" id="3_8qejc"]
+[ext_resource type="PackedScene" uid="uid://bta6a5h1mbhuh" path="res://character/perso_moon.tscn" id="4_hbpdi"]
+[ext_resource type="PackedScene" uid="uid://x2mjfdf05bk4" path="res://Music/respawn.tscn" id="5_y7kub"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k7bqp"]
+texture = ExtResource("3_8qejc")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:2/0/physics_layer_0/angular_velocity = 0.0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:3/0/physics_layer_0/angular_velocity = 0.0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:3/0/physics_layer_0/angular_velocity = 0.0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:3/0/physics_layer_0/angular_velocity = 0.0
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+3:4/0 = 0
+3:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:4/0/physics_layer_0/angular_velocity = 0.0
+2:4/0 = 0
+2:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:4/0/physics_layer_0/angular_velocity = 0.0
+4:4/0 = 0
+4:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:4/0/physics_layer_0/angular_velocity = 0.0
+0:5/0 = 0
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+2:5/0 = 0
+2:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:5/0/physics_layer_0/angular_velocity = 0.0
+3:5/0 = 0
+3:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:5/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_5221i"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_k7bqp")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qcxo"]
+size = Vector2(16, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0siv"]
+size = Vector2(1439, 33.5)
+
+[node name="MOON" type="Node"]
+script = ExtResource("1_iphft")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2423.0
+offset_top = -1602.0
+offset_right = 2079.0
+offset_bottom = 1593.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_avpg8")
+
+[node name="TileMap" type="TileMap" parent="."]
+texture_filter = 1
+tile_set = SubResource("TileSet_5221i")
+format = 2
+layer_0/tile_data = PackedInt32Array(2359309, 131072, 0, 2359308, 65536, 0, 2359310, 131072, 0, 2424844, 65536, 2, 2424845, 131072, 2, 2424846, 131072, 2, 2424847, 196608, 2, 2359311, 196608, 0, 2228246, 65536, 0, 2293782, 65536, 2, 2293783, 196608, 2, 2228247, 196608, 0, 2162722, 65536, 0, 2228258, 65536, 2, 2097170, 196608, 2, 2097169, 65536, 2, 2031633, 65536, 0, 2031634, 196608, 0, 2162723, 196608, 0, 2228259, 196608, 2, 2097186, 65536, 4, 1966091, 0, 3, 1966092, 65536, 3, 1966093, 131072, 3, 1900555, 65536, 4, 1900556, 65536, 4, 1900557, 65536, 4, 1900551, 0, 3, 1835015, 65536, 4, 1769488, 0, 3, 1769489, 131072, 3, 1769484, 131072, 4, 1769485, 196608, 4, 1638432, 0, 2, 1638431, 131072, 4, 1769504, 196608, 3, 1572896, 0, 0, 1638435, 196608, 3, 1572899, 65536, 4, 1507344, 262144, 3, 1900552, 131072, 3, 1441824, 131072, 5, 1638434, 0, 5, 1703965, 0, 5, 1703957, 0, 5, 1703947, 0, 5, 1835021, 131072, 5, 2097179, 0, 5, 1966110, 131072, 5, 2228242, 0, 5)
+
+[node name="Perso_MOON" parent="." instance=ExtResource("4_hbpdi")]
+position = Vector2(224, 570)
+
+[node name="END" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="END"]
+position = Vector2(264, 367.5)
+shape = SubResource("RectangleShape2D_5qcxo")
+
+[node name="Fall" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fall"]
+position = Vector2(488, 641)
+shape = SubResource("RectangleShape2D_b0siv")
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(1144, 989)
+polygon = PackedVector2Array(-925, -549, -936, -544, -947, -549, -936, -554)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(1134, 1024)
+polygon = PackedVector2Array(-913, -545, -955, -545, -950, -555, -918, -555)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(1504, 942)
+polygon = PackedVector2Array(-931, -543, -941, -543, -936, -553)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(1417, 934)
+polygon = PackedVector2Array(-906, -521, -916, -526, -906, -531)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(1032, 984)
+polygon = PackedVector2Array(-907, -521, -917, -521, -912, -531)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fall"]
+position = Vector2(567, 512)
+polygon = PackedVector2Array(-10, 15, -20, 15, -15, 5)
+
+[node name="respawn" parent="." instance=ExtResource("5_y7kub")]
+volume_db = -30.0
+
+[connection signal="body_entered" from="END" to="." method="_on_end_body_entered"]
+[connection signal="body_entered" from="Fall" to="." method="_on_fall_body_entered"]
