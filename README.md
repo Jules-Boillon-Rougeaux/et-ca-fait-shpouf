@@ -5,11 +5,12 @@ Nom du jeu, est un jeu  de type plateformer 2D réalisé avec Godot.
 Il offre une expérience de jeu unique avec plus d'une vingtaine de niveaux exclusifs et un design Pixel Art.
 Actuellement, le jeu est en cours de développement pour inclure un mode multijoueur.
 
-## Installation
-1. Clonez ce dépôt sur votre machine :
+--Work still in progress--
+## ~~Installation~~
+~~1. Clonez ce dépôt sur votre machine :
   git clone https://github.com/Jules-Boillon-Rougeaux/et-ca-fait-shpouf
 2. Ouvrez le projet dans Godot Engine.
-3. Lancez le jeu en appuyant sur le bouton "Play".
+3. Lancez le jeu en appuyant sur le bouton "Play".~~
 
 ## Contrôles
 - Utilisez les touches directionnelles pour vous déplacer.
