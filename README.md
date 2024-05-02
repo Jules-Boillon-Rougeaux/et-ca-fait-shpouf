@@ -1,7 +1,7 @@
-# Saute ! Mouton, saute !
+# Saute, Mouton... SAUTE !
 
 ## Description
-"Saute ! Mouton, saute !", est un jeu de type plateformer 2D réalisé avec Godot. 
+"Saute, Mouton... SAUTE !", est un jeu de type plateformer 2D réalisé avec Godot. 
 Il offre une expérience de jeu unique avec plus d'une vingtaine de niveaux exclusifs et un design Pixel Art.
 Actuellement, le jeu est en cours de développement pour inclure un mode multijoueur.
 
