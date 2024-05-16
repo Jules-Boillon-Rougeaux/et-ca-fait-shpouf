@@ -10,7 +10,7 @@ Dans une vallée paisible, vivait un mouton à la toison évoquant un nuage.
 Un jour, il décida de partir à l'aventure pour atteindre la magnifique plaine de l'île volante.
 Il entreprit ainsi un voyage qui restera dans les légendes.
 
-Vous incarnez ainsi un mouton du nom de "...", vous parcourez de nombreux obstacle afin d'atteindre la plaine de l'île volante.
+Vous incarnez ainsi un mouton du nom de "...", vous parcourez de nombreux obstacles afin d'atteindre la plaine de l'île volante.
 
 ## Installation
 ...
